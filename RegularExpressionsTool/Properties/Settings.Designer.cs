@@ -58,5 +58,125 @@ namespace RegularExpressionsTool.Properties {
                 this["ReplacementString"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("(?i)sample")]
+        public string CustomButton1Value {
+            get {
+                return ((string)(this["CustomButton1Value"]));
+            }
+            set {
+                this["CustomButton1Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("(?i)sam(?-i)ple")]
+        public string CustomButton2Value {
+            get {
+                return ((string)(this["CustomButton2Value"]));
+            }
+            set {
+                this["CustomButton2Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sampleという文字列 （大文字小文字同一視）")]
+        public string CustomButton1Content {
+            get {
+                return ((string)(this["CustomButton1Content"]));
+            }
+            set {
+                this["CustomButton1Content"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sampleという文字列(samは大小文字同一視、pleは小文字限定)")]
+        public string CustomButton2Content {
+            get {
+                return ((string)(this["CustomButton2Content"]));
+            }
+            set {
+                this["CustomButton2Content"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[0-9]")]
+        public string CustomButton3Value {
+            get {
+                return ((string)(this["CustomButton3Value"]));
+            }
+            set {
+                this["CustomButton3Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[^]")]
+        public string CustomButton4Value {
+            get {
+                return ((string)(this["CustomButton4Value"]));
+            }
+            set {
+                this["CustomButton4Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[^A-Za-z_]")]
+        public string CustomButton5Value {
+            get {
+                return ((string)(this["CustomButton5Value"]));
+            }
+            set {
+                this["CustomButton5Value"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0 から 9 の任意の 1 文字")]
+        public string CustomButton3Content {
+            get {
+                return ((string)(this["CustomButton3Content"]));
+            }
+            set {
+                this["CustomButton3Content"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("アルファベットおよびアンダースコア以外")]
+        public string CustomButton5Content {
+            get {
+                return ((string)(this["CustomButton5Content"]));
+            }
+            set {
+                this["CustomButton5Content"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("[^]内にない任意の 1 文字")]
+        public string CustomButton4Content {
+            get {
+                return ((string)(this["CustomButton4Content"]));
+            }
+            set {
+                this["CustomButton4Content"] = value;
+            }
+        }
     }
 }

@@ -4,22 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="RegularExpressionsTool" Height="350" Width="550">
+        Title="RegularExpressionsTool" Height="400" Width="550">
     <Grid>
 
-        <Label Content="元ネタ" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="元ネタ" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="OrizinalString" HorizontalAlignment="Left" Height="23" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
 
-        <Label Content="検索文字列" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="SearchString" HorizontalAlignment="Left" Height="23" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
+        <Label Content="検索文字列" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="CustomButton1" Content="カスタム1" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" Width="80" Click="CustomButton1_Click"/>
+        <Button x:Name="CustomButton2" Content="カスタム2" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="80" Click="CustomButton2_Click"/>
+        <Button x:Name="CustomButton3" Content="カスタム3" HorizontalAlignment="Left" Margin="190,100,0,0" VerticalAlignment="Top" Width="80" Click="CustomButton3_Click"/>
+        <Button x:Name="CustomButton4" Content="カスタム4" HorizontalAlignment="Left" Margin="280,100,0,0" VerticalAlignment="Top" Width="80" Click="CustomButton4_Click"/>
+        <Button x:Name="CustomButton5" Content="カスタム5" HorizontalAlignment="Left" Margin="370,100,0,0" VerticalAlignment="Top" Width="80" Click="CustomButton5_Click"/>
+        <TextBox x:Name="SearchString" HorizontalAlignment="Left" Height="23" Margin="10,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
 
-        <Label Content="置換文字列" HorizontalAlignment="Left" Margin="10,130,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="ReplacementString" HorizontalAlignment="Left" Height="23" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
+        <Label Content="置換文字列" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="ReplacementString" HorizontalAlignment="Left" Height="23" Margin="10,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
 
-        <Label Content="置換結果" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="ConversionString" HorizontalAlignment="Left" Height="23" Margin="10,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
+        <Label Content="置換結果" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="ConversionString" HorizontalAlignment="Left" Height="23" Margin="10,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
 
-        <Button x:Name="ConversionButton" Content="変換" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="75" Click="ConversionButton_Click"/>
+        <Button x:Name="ConversionButton" Content="置換" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="60" Click="ConversionButton_Click"/>
         
     </Grid>
 </Window>

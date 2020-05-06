@@ -11,5 +11,35 @@
     <Setting Name="ReplacementString" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="CustomButton1Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(?i)sample</Value>
+    </Setting>
+    <Setting Name="CustomButton2Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">(?i)sam(?-i)ple</Value>
+    </Setting>
+    <Setting Name="CustomButton1Content" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sampleという文字列 （大文字小文字同一視）</Value>
+    </Setting>
+    <Setting Name="CustomButton2Content" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sampleという文字列(samは大小文字同一視、pleは小文字限定)</Value>
+    </Setting>
+    <Setting Name="CustomButton3Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[0-9]</Value>
+    </Setting>
+    <Setting Name="CustomButton4Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[^]</Value>
+    </Setting>
+    <Setting Name="CustomButton5Value" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[^A-Za-z_]</Value>
+    </Setting>
+    <Setting Name="CustomButton3Content" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0 から 9 の任意の 1 文字</Value>
+    </Setting>
+    <Setting Name="CustomButton5Content" Type="System.String" Scope="User">
+      <Value Profile="(Default)">アルファベットおよびアンダースコア以外</Value>
+    </Setting>
+    <Setting Name="CustomButton4Content" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[^]内にない任意の 1 文字</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -15,18 +15,11 @@ namespace RegularExpressionsTool
         public MainWindow()
         {
             InitializeComponent();
-            try
-            {
-                Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                OrizinalString.Text = config.AppSettings.Settings["OrizinalString"].Value;
-                SearchString.Text = config.AppSettings.Settings["SearchString"].Value;
-                ReplacementString.Text = config.AppSettings.Settings["ReplacementString"].Value;
-            }
-            catch(Exception)
-            {
-
-            }
-            
+            CustomButton1.ToolTip = Properties.Settings.Default.CustomButton1Content;
+            CustomButton2.ToolTip = Properties.Settings.Default.CustomButton2Content;
+            CustomButton3.ToolTip = Properties.Settings.Default.CustomButton3Content;
+            CustomButton4.ToolTip = Properties.Settings.Default.CustomButton4Content;
+            CustomButton5.ToolTip = Properties.Settings.Default.CustomButton5Content;
         }
 
 
@@ -60,11 +53,10 @@ namespace RegularExpressionsTool
                 }
                 ConversionString.Text =　Regex.Replace(OrizinalString.Text, SearchString.Text, replacement);
 
-                Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                config.AppSettings.Settings.Add("OrizinalString",OrizinalString.Text);
-                config.AppSettings.Settings.Add("SearchString",SearchString.Text);
-                config.AppSettings.Settings.Add("ReplacementString",ReplacementString.Text);
-                config.Save();
+                Properties.Settings.Default.OrizinalString = OrizinalString.Text;
+                Properties.Settings.Default.SearchString = SearchString.Text;
+                Properties.Settings.Default.ReplacementString = ReplacementString.Text;
+                Properties.Settings.Default.Save();
             }
             catch (Exception ex)
             {
@@ -72,5 +64,31 @@ namespace RegularExpressionsTool
                 return;
             }
         }
+
+        private void CustomButton1_Click(object sender, RoutedEventArgs e)
+        {
+            SearchString.Text += Properties.Settings.Default.CustomButton1Value;
+        }
+
+        private void CustomButton2_Click(object sender, RoutedEventArgs e)
+        {
+            SearchString.Text += Properties.Settings.Default.CustomButton2Value;
+        }
+
+        private void CustomButton3_Click(object sender, RoutedEventArgs e)
+        {
+            SearchString.Text += Properties.Settings.Default.CustomButton3Value;
+        }
+
+        private void CustomButton4_Click(object sender, RoutedEventArgs e)
+        {
+            SearchString.Text += Properties.Settings.Default.CustomButton4Value;
+        }
+
+        private void CustomButton5_Click(object sender, RoutedEventArgs e)
+        {
+            SearchString.Text += Properties.Settings.Default.CustomButton5Value;
+        }
+
     }
 }
